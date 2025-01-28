@@ -81,7 +81,33 @@ This project focuses on the detection and classification of plant leaf diseases 
     - Enhanced model interpretability using CBAM.
 
 
+## Installation
 
+1. Clone the repository:
+2. Install the required dependencies:
+3. Run the project:
+
+## Folder Structure
+
+    plant-leaf-disease-detection/
+        ├── data/                 # Dataset folder
+        ├── models/               # Pre-trained models and architectures
+        ├── notebooks/            # Jupyter notebooks for experimentation
+        ├── scripts/              # Python scripts for training and evaluation
+        ├── results/              # Generated results and visualizations
+        └── README.md            # Project documentation
+
+## Future Scope
+
+- Extend the dataset to include more plant species and diseases.
+- Deploy the model as a web or mobile application for real-time disease detection.
+- Explore other advanced architectures like Vision Transformers (ViT).
+
+## Acknowledgments
+
+- TensorFlow and Keras documentation.
+- Research papers on CBAM and compound scaling.
+- Datasets and community contributions to open-source projects.
 
 
 
