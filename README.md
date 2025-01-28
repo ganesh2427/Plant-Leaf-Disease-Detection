@@ -3,13 +3,17 @@
 ## Overview
 This project focuses on the detection and classification of plant leaf diseases using advanced convolutional neural network (CNN) architectures. The primary goal is to identify and categorize diseases affecting plant leaves, enabling early intervention to improve agricultural productivity and minimize losses. The project incorporates state-of-the-art deep learning techniques, including CBAM (Convolutional Block Attention Module) and compound scaling, to enhance model performance.
 
-## Description
-This project is a Python-based web scraper that extracts and organizes data from e-commerce websites.
- 
+
+
 **Features:**
-- Supports multiple websites.
-- Data export to CSV and JSON.
-- Customizable scraping settings.
+- Disease detection and classification using images of plant leaves.
+- Implementation of various CNN architectures:
+    - AlexNet
+    - VGG16
+    - EfficientNet
+- Integration of CBAM for improved feature attention.
+- Application of compound scaling to optimize model performance and efficiency.
+- Developed using TensorFlow and supporting Python libraries.
 
 ## Table of Contents
 - [Installation](#installation)
