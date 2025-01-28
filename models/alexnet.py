@@ -62,7 +62,7 @@ cnn.add(tf.keras.layers.Dense(4096, activation='relu'))
 
 cnn.add(tf.keras.layers.Dense(4096, activation='relu'))
 
-cnn.add(tf.keras.layers.Dense(38, activation='softmax'))
+cnn.add(tf.keras.layers.Dense(39, activation='softmax'))
 
 cnn.compile(optimizer=tf.keras.optimizers.legacy.Adam(
     learning_rate=0.0001),loss='categorical_crossentropy',metrics=['accuracy'])
@@ -87,23 +87,23 @@ print('Validation accuracy:', val_acc)
 
 cnn.save('alexnet.keras')
 
-import tensorflow as tf
+# import tensorflow as tf
 
-# Load the saved model
-cnn = tf.keras.models.load_model('alexnet.keras')
+# # Load the saved model
+# cnn = tf.keras.models.load_model('alexnet.keras')
 
-# Load the test dataset
-test_set = tf.keras.utils.image_dataset_from_directory(
-    'test',
-    labels="inferred",
-    label_mode="categorical",
-    class_names=None,
-    color_mode="rgb",
-    batch_size=64,
-    image_size=(227, 227),
-    shuffle=False,  # No need to shuffle for testing
-)
+# # Load the test dataset
+# test_set = tf.keras.utils.image_dataset_from_directory(
+#     'test',
+#     labels="inferred",
+#     label_mode="categorical",
+#     class_names=None,
+#     color_mode="rgb",
+#     batch_size=64,
+#     image_size=(227, 227),
+#     shuffle=False,  # No need to shuffle for testing
+# )
 
-# Evaluate the model on the test dataset
-test_loss, test_acc = cnn.evaluate(test_set)
-print('Test accuracy:', test_acc)
+# # Evaluate the model on the test dataset
+# test_loss, test_acc = cnn.evaluate(test_set)
+# print('Test accuracy:', test_acc)

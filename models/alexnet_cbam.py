@@ -3,7 +3,7 @@ from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.layers import Dropout
 from tensorflow.keras.layers import Reshape, GlobalMaxPooling2D, GlobalAveragePooling2D
 from tensorflow.keras.layers import Activation, Concatenate, Multiply
-#this is alexnet_cbam
+
 def Channel_attention_module(x, ratio=8):  
     b, _, _, channel = x.shape
     l1 = Dense(channel // ratio, activation="relu", use_bias=False)
@@ -99,7 +99,7 @@ validation_set = tf.keras.utils.image_dataset_from_directory(
 input_shape = (227, 227, 3)   
 num_classes = 39  
 model = alexnet_cbam(input_shape, num_classes)
-
+ 
 model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
               loss='categorical_crossentropy',
               metrics=['accuracy'])
