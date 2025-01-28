@@ -5,7 +5,7 @@ This project focuses on the detection and classification of plant leaf diseases 
 
 
 
-**Features:**
+## Features
 - Disease detection and classification using images of plant leaves.
 - Implementation of various CNN architectures:
     - AlexNet
@@ -15,33 +15,80 @@ This project focuses on the detection and classification of plant leaf diseases 
 - Application of compound scaling to optimize model performance and efficiency.
 - Developed using TensorFlow and supporting Python libraries.
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## Features
-- User-friendly interface for seamless interaction.
-- Real-time data processing with high accuracy.
-- Multi-platform support (Windows, macOS, Linux).
-- Scalable architecture for handling large datasets.
-- Secure authentication and authorization mechanisms.
-- Exportable reports in various formats (CSV, JSON, PDF).
-- Integration with third-party APIs for extended functionality.
-- Detailed documentation and tutorials for easy setup.
-
-
 ## Technologies Used
-- **Programming Languages**: Python, JavaScript
-- **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB, PostgreSQL
-- **Machine Learning**: TensorFlow, PyTorch
-- **Version Control**: Git, GitHub
-- **APIs**: OpenAI API, Google Maps API
-- **Tools**: Docker, Kubernetes, Jenkins
+
+- Programming Language: Python
+- Framework: TensorFlow, Keras
+- CNN Architectures: AlexNet, VGG16, EfficientNet
+- Attention Mechanism: CBAM (Convolutional Block Attention Module)
+- Optimization: Compound Scaling
+- Libraries:
+    - NumPy
+    - Pandas
+    - Matplotlib/Seaborn (for visualization)
+    - Scikit-learn (for preprocessing and evaluation)
+
+
+
+
+## Dataset
+
+- The dataset consists of labeled images of plant leaves categorized by type and disease.
+- Preprocessing steps:
+    - Resizing images to a uniform size.
+    - Data augmentation techniques such as rotation, flipping, and zooming to improve model generalization.
+    - Splitting the dataset into training, validation, and testing sets.
+
+
+## Project Workflow
+
+1. Data Preparation:
+
+    - Load and preprocess the dataset.
+
+    - Perform data augmentation to enhance model generalization.
+
+2. Model Selection:
+
+    - Implement multiple CNN architectures (AlexNet, VGG16, EfficientNet).
+
+    - Enhance models using CBAM for attention.
+
+    - Optimize model performance using compound scaling.
+
+3. Training and Evaluation:
+
+    - Train models on the processed dataset using TensorFlow.
+
+    - Evaluate models on validation and testing sets.
+
+    - Compare performance metrics such as accuracy, precision, recall, and F1-score.
+
+4. Visualization:
+
+    - Plot training and validation loss/accuracy.
+
+    - Generate heatmaps for attention visualization (CBAM).
+
+## Results
+    - Achieved high accuracy in detecting and classifying plant leaf diseases.
+    - Comparative performance of different architectures:
+
+        - AlexNet: Baseline performance.
+        - VGG16: Improved feature extraction.
+        - EfficientNet: Optimal trade-off between performance and efficiency.
+
+    - Enhanced model interpretability using CBAM.
+
+
+
+
+
+
+
+
+
+
 
 
 
